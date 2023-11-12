@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container::before {
+        content: "";
+        position: absolute;
+        background: url(img/photo3.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.37;
+    }
+
+    .container {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        justify-content: center;
+        text-align: center;
+        margin: 30px auto;
+
+    }
+
+    #form-group {
+        padding: 12px;
+        border: 7px solid rgb(209, 30, 209);
+    }
+
+
+    #form-group input {
+        width: 400px;
+        padding: 12px;
+        margin: 5px;
+        background-color: rgb(175, 198, 218);
+        font-size: 15px;
+        border-radius: 20px;
+
+    }
+
+    #form-group button {
+        border: 2px solid black;
+
+        display: flex;
+        padding: 6px 72px;
+        margin: 10px auto;
+        justify-content: center;
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(152, 102, 199);
+        cursor: pointer;
+
+
+
+    }
+
+    .member {
+        padding: 12px;
+
+    }
+
+    .member a {
+        text-decoration: none;
+
+    }
+
+    .primary {
+        font-size: 30px;
+        margin: 23px;
+        color: blueviolet;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="form-group">
+            <h2 class="primary">Login</h2>
+            <hr>
+            <div class="first">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="first">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="first">
+                <input type="forgot" placeholder="Forgot Password?">
+            </div>
+            <div class="btn">
+                <button>Login</button>
+            </div>
+            <div class="member">
+                Not a Member? <a href="#">Signup</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

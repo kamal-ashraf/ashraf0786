@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        color: white;
+        background-color: rgb(161, 141, 181);
+    }
+
+    .container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        top: 40px;
+
+
+    }
+
+    .form-group {
+        border: 5px solid red;
+        width: 493px;
+        height: 565px;
+        text-align: center;
+        padding-top: 30px;
+        background-color: rgb(140, 102, 176);
+
+
+    }
+
+    .form-group h1 {
+
+        margin: 15px;
+    }
+
+    .first input {
+        padding: 7px 13px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    .second input {
+        width: 400px;
+        padding: 6px;
+        margin: 6px;
+        text-align: center;
+    }
+
+    .checkbox {
+        padding: 22px;
+    }
+
+    .btn {
+        width: 300px;
+        padding: 8px;
+        font-size: 20px;
+        border-radius: 14px;
+        background-color: rgb(65, 76, 76);
+        color: rgb(0, 255, 115);
+        cursor: pointer;
+
+    }
+
+    .account {
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <h1>Sign Up</h1>
+            <div class="first">
+                <input type="name" placeholder="First Name ">
+                <input type="name" placeholder="Last Number">
+            </div>
+            <div class="second">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="second">
+                <input type="password" placeholder="Enter password">
+            </div>
+            <div class="second">
+                <input type="password" placeholder="Confirm password">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="check"> I accept the<a href="#">Terms&Conditions</a>
+            </div>
+            <button class="btn">Sign Up</button>
+
+            <div class="account">
+                Already have an account?<a href="#">Login here</a>
+            </div>
+            <footer>
+                Copyright&copy;yourwebsite.com
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

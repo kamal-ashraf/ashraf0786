@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+
+
+    }
+
+    .form {
+        border: 10px solid black;
+        width: 500px;
+        height: 500px;
+        background-color: rgb(200, 214, 214);
+        border-color: green;
+
+    }
+
+    .form h2 {
+        color: green;
+    }
+
+    .form input {
+
+        padding: 20px 50px;
+        margin: 15px;
+        font-size: 20px;
+    }
+
+    .btn {
+        border: 2px solid black;
+        font-size: 20px;
+        padding: 10px 25px;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .psw {
+        padding-top: 10px;
+
+
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Login</h2>
+
+            <div>
+                <input type="text" placeholder="Email">
+            </div>
+            <div>
+                <input type="text" placeholder="Password">
+            </div>
+            <div>
+                <input type="checkbox" name="Password"> Show Password
+            </div>
+            <div>
+                <button class="btn">SIGN IN</button>
+            </div>
+            <div class="psw">Forgot <a href="#">Username/Password?</a></div>
+
+            <div class="psw">Don't have an account? <a href="#">Sign up</a></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
